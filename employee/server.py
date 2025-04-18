@@ -23,11 +23,12 @@ def PredictChurn(data: List[dict]) -> str:
         str: 1 for chrun, 0 for not churn
     """
     
-    payload = data[0]
+    payload = data[0] # one at a time for now
     response = requests.post(
         "http://127.0.0.1:8000", 
         headers={"Accept": "application/json", "Content-Type": "application/json"}, 
-        data=json.dumps(payload))
+        data=json.dumps(payload)
+        )
     
     return response.json()
 
