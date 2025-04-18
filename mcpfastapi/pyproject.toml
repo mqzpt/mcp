@@ -1,0 +1,18 @@
+[project]
+name = "mcpfastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11, <3.12"
+dependencies = [
+    "pydantic>=2.11.3",
+    "scikit-learn==1.1.2",
+    "numpy==1.23.5",
+    "fastapi>=0.115.12",
+    "pandas>=2.2.3",
+    "gunicorn>=23.0.0",
+    "uvicorn>=0.34.1",
+]
+
+[tool.uv.sources]
+scikit-learn = { url = "https://files.pythonhosted.org/packages/91/54/14e64c540d554d29e40239850bc656e2d403870c6fb388319034eb878f0a/scikit_learn-1.1.3-cp311-cp311-macosx_12_0_arm64.whl" }
